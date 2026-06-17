@@ -5,39 +5,99 @@
 }
 
 body {
-    background-color: rgb(15, 14, 14);
-    max-width: 100%;
-    display: flex;
-    align-items: center;
+    background-color: rgb(0, 0, 0); /* SERVE PARA MUDAR A COR DE FUNDO*/
+    max-width: 100vw; /* LARGURA MÁXIMA DO BODY*/
+    height: 100vh; /* ALTURA MÁXIMA DO BODY*/ 
+    display: flex; /* FAZ COM QUE O CONTEUDO DO ELEMENTO FIQUE AO LADO DO OUTRO*/
+    justify-content: center; /* COLOCA O ELEMENTO AO CENTRO*/
+    align-items: center; /* ALINHA O ELEMENTO AO CENTRO DA PÁGINA*/
 }
 
 #login {
-    width: 75%;
-    margin: 0 auto;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
-    height: 80vh;
-    display: flex;
-    box-shadow: 5px 2px 10px rgba(6, 6, 6, 0.564);  
+
 }
 
 .login-container {
-    width: 50%;
+    background-color: white; /* SERVE PARA MUDAR A COR DE FUNDO*/
+    width: 80vw; /* LARGURA MÁXIMA DA CAIXA DE LOGIN*/
+    height: 80vh; /* ALTURA MÁXIMA DA CAIXA DE LOGIN*/
+    display: flex; /* FAZ COM QUE O CONTEUDO DO ELEMENTO FIQUE AO LADO DO OUTRO*/
+}
+
+.box-1-login {
+    width: 40%; /* LIMITA A LARGURA EM 1250PX*/
     height: 100%;
-    overflow: hidden;
+    overflow: hidden; /*ESCONDER AS BORDAS DA IMAGEM QUE FICAM PARA FORA DO LIMITE DE LARGURA E ALTURA DO ELEMENTO PAI*/
 }
 
-.login-imagen{
-  transform: translateY(-28vh);
-}
-
-.caixa-2 {
+.img-login {
     width: 100%;
-    height: 100%;   
+    height: 100%;
+
 }
 
-.in-box2 {
-    background-color: rgb(255, 255, 255);
-    height: 100%;
-    padding: 20px;
+.box2-login {
+    border: 1px solid #000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.inbox-2 {
+    width: 250px;
+    height: auto;
+}
+
+.gmail {
+    padding-bottom: 15px;
+    
+}
+
+.gmail input {
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+form legend {
+    font-size: 1.8em;
+    padding-bottom: 20px;
+}
+
+.passoword input {
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+}
+
+
+
+.account-login {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.account-login a {
+    border: none;
+    color: rgb(4, 42, 209);
+}
+
+.google-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.309);
+    border-radius: 10px;
+    transition: all 0.2s linear;
+}
+
+.google-btn:hover {
+    transform: scale(1.05);
 }
