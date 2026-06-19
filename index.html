@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
     <title>Entrar</title>
 </head>
 <body>
@@ -30,23 +34,41 @@
             <form class="gmail">
               <legend><span>Entrar</span></legend>
               <label for="email"></label>
-              <input type="email" id="email" name="email" placeholder="Email">
+              <input type="email" id="email" name="email" required placeholder="Email">
               </form>
 
             <form class="passoword">
               <label for="senha"></label>
-              <input type="text" id="senha" name="senha" placeholder="Senha">
+              <input type="text" id="senha" name="senha" required placeholder="Senha">
             </form>
 
-            <div class="account-login">
-              <a href="recuperation-account">Recuperar conta</a>
-              <a href="Cadastration-login">Cadastrar-me</a>
+
+              <div class="account-login">
+                <a href="recuperation-account">Recuperar conta</a>
+                <a href="Cadastration-login">Cadastrar-me</a>
+              </div>
+
+              <!--SECÇÃO BOTÕES-->
+
+              <div class="join">
+                <a class="join-btn" href="#">Logar</a>
+              </div>
+
+              <hr class="border">
+             
+
+              <div class="google-btn">
+                <img src="/Imagem-login/google icon.png" alt="icone do google" width="40px">
+                <p>Entrar com o google</p>
+              </div>
+
+              <div class="guest-login">
+                <p>Continuar como convidado</p>
+              </div>
+            
             </div>
 
-            <div class="google-btn">
-              <img src="/Imagem-login/google icon.png" alt="icone do google" width="40px">
-              <p>Entrar com o google</p>
-            </div>
+
             
           </div>
 

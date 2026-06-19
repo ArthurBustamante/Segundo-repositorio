@@ -2,10 +2,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    color: rgb(240, 236, 236);;
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+p {
+    font-weight: 300;
+}
+
+span {
+    font-weight: 400;
+    font-size: 30px;
 }
 
 body {
-    background-color: rgb(0, 0, 0); /* SERVE PARA MUDAR A COR DE FUNDO*/
+    background-color: rgb(24, 24, 24); /* SERVE PARA MUDAR A COR DE FUNDO*/
     max-width: 100vw; /* LARGURA MÁXIMA DO BODY*/
     height: 100vh; /* ALTURA MÁXIMA DO BODY*/ 
     display: flex; /* FAZ COM QUE O CONTEUDO DO ELEMENTO FIQUE AO LADO DO OUTRO*/
@@ -13,9 +33,9 @@ body {
     align-items: center; /* ALINHA O ELEMENTO AO CENTRO DA PÁGINA*/
 }
 
-#login {
+/* #login {
 
-}
+}*/
 
 .login-container {
     background-color: white; /* SERVE PARA MUDAR A COR DE FUNDO*/
@@ -33,33 +53,38 @@ body {
 .img-login {
     width: 100%;
     height: 100%;
-
 }
 
 .box2-login {
-    border: 1px solid #000;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    background-image: url('/Imagem-login/train-black.jpg');
+    background-size: cover;
 }
 
 
 .inbox-2 {
-    width: 250px;
+    width: 400px;
     height: auto;
+    padding: 15px;
+    background: linear-gradient(to top black, white);
+    backdrop-filter: blur(3px);
 }
+
 
 .gmail {
     padding-bottom: 15px;
-    
 }
 
 .gmail input {
     font-size: 20px;
+    width: 100%;
+    padding: 5px 10px;
+    background-color: rgb(255, 255, 255);
     border: none;
-    border-bottom: 1px solid black;
+    
 }
 
 form legend {
@@ -69,8 +94,11 @@ form legend {
 
 .passoword input {
     border: none;
-    border-bottom: 1px solid black;
     font-size: 20px;
+    width: 100%;
+    padding: 5px 10px;
+    background-color: rgb(255, 255, 255);
+    
 }
 
 
@@ -85,7 +113,33 @@ form legend {
 
 .account-login a {
     border: none;
-    color: rgb(4, 42, 209);
+    color: rgb(33, 17, 18);
+}
+
+.join-btn {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.2s ease;
+    background-color: rgb(231, 17, 17);
+    color: white;
+    margin-bottom: 3rem;
+    transition: all 0.2s linear;
+}
+
+.join-btn:hover {
+    background-color: rgb(188, 23, 23);
+}
+
+.join a {
+    color: rgb(241, 236, 236);
+}
+
+.border {
+    margin-bottom: 2rem;
 }
 
 .google-btn {
@@ -95,9 +149,38 @@ form legend {
     align-items: center;
     border: 1px solid rgba(0, 0, 0, 0.309);
     border-radius: 10px;
-    transition: all 0.2s linear;
+    transition: 0.2s ease;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.google-btn p {
+    color: black;
 }
 
 .google-btn:hover {
     transform: scale(1.05);
+    cursor: pointer;
+}
+
+.guest-login {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.2s ease;
+    background-color: red;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.guest-login P {
+    color: white;
+}
+
+.guest-login:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
